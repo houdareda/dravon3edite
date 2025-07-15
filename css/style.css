@@ -340,7 +340,10 @@ html {
     width: 55%;
     padding-bottom: 2vw
 }
-
+.last_sec .div_form .text_price_img img{
+    margin-right: 8px;
+    border-radius: 0 0 15px 15px;
+}
 .last_sec .secret {
     display: flex;
     align-items: center;
@@ -364,6 +367,23 @@ html {
     position: absolute;
     top: 3vw;
     left: 0
+}
+.last_sec .div_form .flex_price .img_productt::after{
+    position: absolute;
+    content: '';
+    bottom: 2vw;
+    left: 0;
+    width: 90%;
+    height: 15px;
+    background: linear-gradient(#00000035,#00000073,#00000035);
+    filter: blur(6px); /* ضبابية لمحاكاة الظل */
+    rotate: -3deg;
+    z-index: 1;
+}
+.last_sec .div_form .flex_price .img_productt img{
+    filter: drop-shadow(-5px 10px 15px rgba(0, 0, 0, 0.7));
+    position: relative;
+    z-index: 10;
 }
 
 .last_sec .delv_text {
